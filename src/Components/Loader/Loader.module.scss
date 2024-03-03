@@ -1,0 +1,55 @@
+.loader_wrapper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 544px;
+    width: 467%;
+    text-align: center;
+  }
+  
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid sandybrown;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      border: 5px solid lightgrey;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      animation: scaleUp 1s linear infinite;
+    }
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  
+    60% , 100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% , 60% , 100% {
+      transform: scale(1);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  }
+  

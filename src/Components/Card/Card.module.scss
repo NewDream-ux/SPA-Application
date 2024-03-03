@@ -1,0 +1,28 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 33%;
+  text-align: center;
+  font-family: arial;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card {
+  button {
+    margin-bottom: 1px;
+    border: none;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  p {
+    padding: 8px;
+  }
+}

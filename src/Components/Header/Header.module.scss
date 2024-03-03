@@ -1,0 +1,25 @@
+.header_container {
+    width: 100%;
+    height: 50px;
+    background-color: sandybrown;
+  }
+  
+  .app_title {
+    float: left;
+    padding: 6px;
+  
+    span {
+      font-weight: bold;
+      font-size: x-large;
+    }
+  }
+  
+  .app_action {
+    float: right;
+    padding: 10px;
+  
+    span {
+      font-weight: bold;
+    }
+  }
+  
